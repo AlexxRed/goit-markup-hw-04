@@ -140,11 +140,27 @@ img {
   display: flex;
   margin-left: auto;
 }
+
+.contacts-item {
+  display: flex;
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+  color: var(--accent-color);
+}
+.svgicon:hover,
+.svgicon:focus {
+  fill: var(--accent-color);
+}
+
 .contacts-item + .contacts-item {
   margin-left: 50px;
 }
 
 .contacts-link {
+  margin-left: 10px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
