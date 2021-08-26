@@ -164,8 +164,19 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: var(--second-backgroud-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/background/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
+
+/* .hero-container {
+  background-image: url("./images/background/Img.jpg");
+} */
 
 .hero-title {
   margin: 0 auto 30px;
