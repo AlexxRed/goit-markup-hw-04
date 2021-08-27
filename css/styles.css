@@ -145,6 +145,8 @@ img {
 
 .contacts-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts-item:hover,
@@ -162,7 +164,8 @@ img {
 }
 
 .contacts-link {
-  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
 
   font-weight: 500;
   font-size: 14px;
@@ -175,8 +178,13 @@ img {
 
 .contacts-icon {
   align-items: center;
-  justify-content: center;
+  margin-right: 10px;
   fill: var(--maine-text-color);
+}
+
+.contacts-icon {
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts-link:hover,
