@@ -6,6 +6,7 @@
   --maine-background-color: #f5f4fa;
   --second-backgroud-color: #2f303a;
   --address-color: rgba(255, 255, 255, 0.6);
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -365,6 +366,10 @@ img {
   background-color: var(--primary-white-color);
 }
 
+.team-svg {
+  fill: var(--icon-color);
+}
+
 /*------our clients------ */
 
 .clients-title {
@@ -397,6 +402,10 @@ img {
   border-radius: 4px;
 }
 
+.clients-icon {
+  fill: var(--icon-color);
+}
+
 /*------footer------ */
 
 .footer {
@@ -404,6 +413,10 @@ img {
   padding-bottom: 60px;
 
   background-color: var(--second-backgroud-color);
+}
+
+.footer-colums {
+  display: flex;
 }
 
 .logo-footer {
@@ -443,6 +456,42 @@ img {
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
   color: var(--accent-color);
+}
+
+.follow-us {
+  margin-left: 70px;
+}
+
+.follow-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.footer-social {
+  display: flex;
+}
+
+.social-item-footer:not(:last-child) {
+  padding-right: 10px;
+}
+
+.footer-socials {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-svg {
+  fill: var(--primary-white-color);
 }
 
 /*------------------PORTFOLIO--------------- */
@@ -501,6 +550,12 @@ img {
   box-sizing: border-box;
   overflow: hidden;
   max-width: 370px;
+}
+
+.projects-item:hover,
+.projects-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .img-content {
