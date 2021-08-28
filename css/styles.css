@@ -201,8 +201,11 @@ img {
 .hero {
   display: flex;
   text-align: center;
+  align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -212,6 +215,7 @@ img {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  max-width: 1600px;
 }
 
 /* .hero-container {
@@ -267,12 +271,27 @@ img {
   width: 270px;
 }
 
-.features-icon {
+.features-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: var(--maine-background-color);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+}
+
+/* .features-icon {
   display: flex;
   margin-bottom: 55px;
   margin-left: 100px;
   justify-content: center;
-}
+} */
+
+/* .features-icon {
+  display: block;
+} */
 
 .features-description {
   margin-bottom: 10px;
@@ -375,8 +394,8 @@ img {
   justify-content: center;
 }
 
-.team-cocials:not(:last-child) {
-  padding-left: 10px;
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link {
@@ -419,7 +438,7 @@ img {
 }
 
 .clients-item:not(:first-child) {
-  padding-left: 30px;
+  margin-left: 30px;
 }
 
 .clients-link {
@@ -456,6 +475,7 @@ img {
 
 .footer-colums {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -498,7 +518,8 @@ img {
 }
 
 .footer-colum2 {
-  padding-top: 12px;
+  margin-left: 70px;
+  /* padding-top: 12px; */
 }
 
 .follow-us {
@@ -508,10 +529,12 @@ img {
 .follow-title {
   margin-bottom: 20px;
 
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
   color: var(--primary-white-color);
 }
 
@@ -520,7 +543,7 @@ img {
 }
 
 .social-item-footer:not(:last-child) {
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .footer-socials {
@@ -572,7 +595,6 @@ img {
 .filters-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -595,6 +617,12 @@ img {
   box-sizing: border-box;
   overflow: hidden;
   max-width: 370px;
+}
+
+.projects-link:hover,
+.projects-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-item:hover,
