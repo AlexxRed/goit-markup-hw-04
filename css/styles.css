@@ -144,7 +144,6 @@ img {
 }
 
 .contacts-item {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -164,6 +163,7 @@ img {
 }
 
 .contacts-link {
+  display: flex;
   justify-content: center;
   align-items: center;
 
