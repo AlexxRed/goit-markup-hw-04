@@ -473,7 +473,7 @@ img {
   background-color: var(--second-backgroud-color);
 }
 
-.footer-colums {
+.footer .container {
   display: flex;
   align-items: baseline;
 }
@@ -617,6 +617,10 @@ img {
   box-sizing: border-box;
   overflow: hidden;
   max-width: 370px;
+}
+
+.projects-link {
+  display: block;
 }
 
 .projects-link:hover,
